@@ -1,7 +1,12 @@
 -- ============================================================
 -- Cyclistic Bike Share Analysis
 -- Google Data Analytics Capstone Project
+--
 -- Author: Stian Landell
+-- Tools: Google BigQuery SQL
+--
+-- This file contains the SQL querries used to create the 
+-- summary tables for the Tableau dashboard.
 --
 -- Source table:
 -- project-6c6094a1-6e2a-4f19-822.cyclistic.all_trips_final
