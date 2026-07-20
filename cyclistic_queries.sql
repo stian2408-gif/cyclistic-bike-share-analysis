@@ -55,7 +55,7 @@ ORDER BY
 -- 3. TRIPS BY DAY OF WEEK
 -- Counts trips for each rider type by weekday.
 -- weekday_number is included so Tableau can sort the days
--- from Sunday through Saturday.
+-- Monday is set to 1 and Sunday to 7 for correct Tableau sorting.
 -- ============================================================
 
 CREATE OR REPLACE TABLE
@@ -64,7 +64,10 @@ CREATE OR REPLACE TABLE
 SELECT
   member_casual,
   FORMAT_TIMESTAMP('%A', started_at) AS day_of_week,
-  EXTRACT(DAYOFWEEK FROM started_at) AS weekday_number,
+  CASE
+    WHEN EXTRACT(DAYOFWEEK FROM started_at) = 1 THEN 7
+    ELSE EXTRACT(DAYOFWEEK FROM started_at) - 1
+  END AS weekday_number,
   COUNT(*) AS trip_count
 FROM
   `project-6c6094a1-6e2a-4f19-822.cyclistic.all_trips_final`
