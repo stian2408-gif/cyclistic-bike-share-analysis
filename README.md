@@ -16,7 +16,6 @@ Identify how annual members and casual riders use Cyclistic bikes differently an
 ## Tools Used
 
 - SQL
-- Python (Pandas, NumPy, Matplotlib)
 - Tableau
 - Google Docs
 
@@ -74,7 +73,7 @@ The following records were removed:
 
 ## Report
 
--[View the complete case study report (PDF)](Cyclistic_Case_Study_Stian_Landell.pdf)
+[View the complete case study report (PDF)](Cyclistic_Case_Study_Stian_Landell.pdf)
 
 ---
 
