@@ -1,0 +1,15 @@
+day_of_week,day_name,member_casual,number_of_trips
+1,Monday,casual,236721
+1,Monday,member,524375
+2,Tuesday,casual,236232
+2,Tuesday,member,605849
+3,Wednesday,casual,227074
+3,Wednesday,member,590563
+4,Thursday,casual,255073
+4,Thursday,member,595891
+5,Friday,casual,318908
+5,Friday,member,547881
+6,Saturday,casual,428273
+6,Saturday,member,472040
+7,Sunday,casual,334022
+7,Sunday,member,397189
